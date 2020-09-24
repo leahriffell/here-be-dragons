@@ -24,7 +24,7 @@ class NytimesTest < Minitest::Test
   end
 
   def test_it_can_get_all_stories_with_subsection_of_politics
-    result = @hash[:results].select{ |article| article[:subsection] == "Politics" }
+    result = @hash[:results].select { |article| article[:subsection] == "Politics" }
 
 
     assert result.is_a? (Array)
